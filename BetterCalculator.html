@@ -1,0 +1,101 @@
+<html>
+
+  <head>
+    <title> Calculator</title>
+	<style>
+		* {
+   cursor: crosshair;
+caret-color: #2e5090;
+}
+body {
+  color: cyan;
+  background: black;
+  cursor: crosshair;
+}
+
+button {
+  color: black;
+  background: cyan;
+  border: none;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+	</style>
+  </head>
+
+  <body id="body">
+    <button id="x" onclick="x()"> Multiply </button>
+    <br>
+    <button id="s" onclick="s()"> Subtraction </button>
+    <br>
+    <button id="d" onclick="d()"> Division</button>
+    <br>
+    <button id="a" onclick="a()"> Addition </button>
+    <br>
+    <button id="sqrt" onclick="sqrt()">Square Root </button>
+    <br>
+    <button id="exponents" onclick="exp()">Exponents</button>
+    <br>
+  </body>
+<script>
+var c
+
+function reset() {
+  var x = 0
+  var y = 0
+  var z = 0
+  var a = 0
+  var n = 0
+}
+
+function x() {
+  var x = prompt("1st Number")
+  var y = prompt("2nd Number")
+  var z = x * y
+  window.alert(z)
+  reset()
+}
+
+function s() {
+  var x = prompt("1st Number")
+  var y = prompt("2nd Number")
+  var z = x - y
+  window.alert(z)
+  reset()
+}
+
+function d() {
+  var x = prompt("1st Number(1st/2nd)")
+  var y = prompt("2nd Number")
+  var z = x / y
+  window.alert(z)
+  reset()
+}
+
+function a() {
+  var x = prompt("1st Number")
+  var y = prompt("2nd Number")
+  parseInt(x)
+  parseInt(y)
+  var z = parseInt(x) + parseInt(y)
+  window.alert(z)
+  reset()
+}
+
+function sqrt() {
+  var x = prompt("The number")
+  var z = Math.sqrt(x)
+  window.alert(z)
+}
+
+function exp() {
+  var x = prompt("The non exponent")
+  var y = prompt("The exponent")
+  var z = x ** y
+  window.alert(z)
+}
+
+</script>
+
+</html>
